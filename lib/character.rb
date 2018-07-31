@@ -2,15 +2,35 @@ class Character < ActiveRecord::Base
   has_many :inventories
   has_many :items, through: :inventories
 
+  attr_accessor :health, :strength, :xp, :level
+
   def add_item(item)
-    Inventory.new(character_id: self.id, item_id: item.id)
+
   end
 
+  def backpack
+    Inventory.find_by(character_id: self.id)
+  end
+
+  def items
+    all_items = []
+    backpack.select do |character_hash|
+      character_hash[:item_id]
+    end
+    #returns an array of items associated witht the user
+  end
+
+  
 
   def equip(item)
     #unequip.(item)
-    #we need an equip method that goes in and changes the value of the inventory
-    Inventory.new(character_id: self.id, item_id: item.id)
+    #equips an item then unequips the previous Item
+    #updates stats of character as well
+    items.collect do |item|
+      if item[:item_id] == item
+
+      end
+
   end
 
   def use_item(item)
