@@ -20,7 +20,7 @@ class Character < ActiveRecord::Base
     #returns an array of items associated witht the user
   end
 
-  
+
 
   def equip(item)
     #unequip.(item)
@@ -30,7 +30,7 @@ class Character < ActiveRecord::Base
       if item[:item_id] == item
 
       end
-
+    end
   end
 
   def use_item(item)
