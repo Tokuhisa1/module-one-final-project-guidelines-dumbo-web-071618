@@ -30,8 +30,8 @@ We intend to build a character creation tool using ActiveRecord as the first ste
 - As a user, I want to delete the inventory for my character [during its deletion] so I can 
 
 ### Post-MVP
-- Better CORS solution
-- Authentication
+- 
+- 
 
 ## Screenshots <a id="screenshot"></a>
 **Index Page**
