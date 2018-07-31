@@ -55,7 +55,7 @@ This schedule will be used to keep track of our progress throughout the week and
 |                                   | Project Approval        | 1 hour  | | 1.5 hours |
 |                             | Create Databse and Models        | 2 hours | | 2.5 hours |
 | Day 2: **Tuesday** (07/31/2018)    | Scope Revision                       | 1 hour  | | 2.5 hours |
-|                                   | MVP Functionality         | 2 hours |  | |
+|                                   | MVP Functionality         | 2 hours | 0.5 hours | |
 | Day 3: **Wednesday** (08/01/2018)   |         |  | |  |
 | Post-MVP Tasks        |         |  |  | |
 | Day 4: **Thursday** (08/02/2018) | Demo Video           |  |  | |
