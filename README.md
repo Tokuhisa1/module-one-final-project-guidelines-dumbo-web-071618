@@ -1,49 +1,63 @@
-# Module One Final Project Guidelines
+﻿  
 
-Congratulations, you're at the end of module one! You've worked crazy hard to get here and have learned a ton.
+> Written with [StackEdit](https://stackedit.io/).
+# **W.E.S.T. Kos Character Builder**
 
-For your final project, we'll be building a Command Line database application.
+## Table of Contents
+- [Statement of Purpose/Mission Statement](#purpose)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Time-Priority Matrix](#matrix)
+- [Schedule](#schedule)
 
-## Project Requirements
 
-### Option One - Data Analytics Project
+## Statement of Purpose/Mission Statement <a id="purpose"></a>
+We intend to build a character creation tool using ActiveRecord as the first step toward a command-line (CLI) role-playing game (RPG).
 
-1. Access a Sqlite3 Database using ActiveRecord.
-2. You should have at minimum three models including one join model. This means you must have a many-to-many relationship.
-3. You should seed your database using data that you collect either from a CSV, a website by scraping, or an API.
-4. Your models should have methods that answer interesting questions about the data. For example, if you've collected info about movie reviews, what is the most popular movie? What movie has the most reviews?
-5. You should provide a CLI to display the return values of your interesting methods.  
-6. Use good OO design patterns. You should have separate classes for your models and CLI interface.
+## Time-Priority Matrix <a id="matrix"></a>
+![Time-Priority Matrix](https://github.com/Tokuhisa1/west-kos-character-builder/blob/dev/CAM00188.jpg?raw=true)
 
-### Option Two - Command Line CRUD App
+## User Stories
+### MVP
+- As a user, I want to be able to create a character so I can play an RPG.
+- As a user, I want to be able to view my character's information so I can strategize for playing an RPG.
+- As a user, I want to be able to edit my character's information [through its inventory] so I can implement my strategy for playing an RPG.
+- As a user, I want to be able to delete a charater I no longer wish to play with.
 
-1. Access a Sqlite3 Database using ActiveRecord.
-2. You should have a minimum of three models.
-3. You should build out a CLI to give your user full CRUD ability for at least one of your resources. For example, build out a command line To-Do list. A user should be able to create a new to-do, see all todos, update a todo item, and delete a todo. Todos can be grouped into categories, so that a to-do has many categories and categories have many to-dos.
-4. Use good OO design patterns. You should have separate models for your runner and CLI interface.
+- As a user, I want to create an inventory for my character [during its creation] so I can keep track of my items.
+- As a user, I want to be able to view my inventory so  I can decide which item(s) to use.
+- As a user, I want to be able to update my inventory so I can keep track of which item(s) I have.
+- As a user, I want to delete the inventory for my character [during its deletion] so I can 
 
-### Brainstorming and Proposing a Project Idea
+### Post-MVP
+- 
+- 
 
-Projects need to be approved prior to launching into them, so take some time to brainstorm project options that will fulfill the requirements above.  You must have a minimum of four [user stories](https://en.wikipedia.org/wiki/User_story) to help explain how a user will interact with your app.  A user story should follow the general structure of `"As a <role>, I want <goal/desire> so that <benefit>"`. In example, if we were creating an app to randomly choose nearby restaurants on Yelp, we might write:
+## Screenshots <a id="screenshot"></a>
+**Index Page**
+![Index Page]()
 
-* As a user, I want to be able to enter my name to retrieve my records
-* As a user, I want to enter a location and be given a random nearby restaurant suggestion
-* As a user, I should be able to reject a suggestion and not see that restaurant suggestion again
-* As a user, I want to be able to save to and retrieve a list of favorite restaurant suggestions
+**Show Page**
+![Show Page]()
 
-## Instructions
+## Technologies <a id="technologies"></a>
+ - Ruby
+ - SQLite3
+ - Active Record
 
-1. Fork and clone this repository.
-2. Build your application. Make sure to commit early and commit often. Commit messages should be meaningful (clearly describe what you're doing in the commit) and accurate (there should be nothing in the commit that doesn't match the description in the commit message). Good rule of thumb is to commit every 3-7 mins of actual coding time. Most of your commits should have under 15 lines of code and a 2 line commit is perfectly acceptable.
-3. Make sure to create a good README.md with a short description, install instructions, a contributors guide and a link to the license for your code.
-4. Make sure your project checks off each of the above requirements.
-5. Prepare a video demo (narration helps!) describing how a user would interact with your working project.
-    * The video should:
-      - Have an overview of your project.(2 minutes max)
-6. Prepare a presentation to follow your video.(3 minutes max)
-    * Your presentation should:
-      - Describe something you struggled to build, and show us how you ultimately implemented it in your code.
-      - Discuss 3 things you learned in the process of working on this project.
-      - Address, if anything, what you would change or add to what you have today?
-      - Present any code you would like to highlight.   
-7. *OPTIONAL, BUT RECOMMENDED*: Write a blog post about the project and process.
+## Project Schedule <a id="schedule"></a>
+
+This schedule will be used to keep track of our progress throughout the week and align with our expectations.  
+
+| Day                                | Deliverable | Estimated Time | Invested | Actual  |
+|:-----------------------------------|:------------|---------------|---------|------ |
+| Day 1: **Monday** (07/30/2018)    | Project Ideation        | 2 hours | | 2.5 hours |
+|                                   | Project Approval        | 1 hour  | | 1.5 hours |
+|                             | Create Databse and Models        | 2 hours | | 2.5 hours |
+| Day 2: **Tuesday** (07/31/2018)    | Scope Revision                       | 1 hour  | | 2.5 hours |
+|                                   | MVP Functionality         | 2 hours | 0.5 hours | |
+| Day 3: **Wednesday** (08/01/2018)   |         |  | |  |
+| Post-MVP Tasks        |         |  |  | |
+| Day 4: **Thursday** (08/02/2018) | Demo Video           |  |  | |
+|                                  | Keynote Presentation            |  |  | |
+| Day 5: **Friday** (08/03/2018)  | Project Presentation                 |  |         | |
