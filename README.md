@@ -27,7 +27,7 @@ We intend to build a character creation tool using ActiveRecord as the first ste
 - As a user, I want to create an inventory for my character [during its creation] so I can keep track of my items.
 - As a user, I want to be able to view my inventory so  I can decide which item(s) to use.
 - As a user, I want to be able to update my inventory so I can keep track of which item(s) I have.
-- As a user, I want to delete the inventory for my character [during its deletion] so I can
+- As a user, I want to delete the inventory for my character [during its deletion] so I can free up resources.
 
 ### Post-MVP
 -
