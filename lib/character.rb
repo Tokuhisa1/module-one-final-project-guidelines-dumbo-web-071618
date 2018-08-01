@@ -8,9 +8,9 @@ class Character < ActiveRecord::Base
   end
 
   def unequip
-
+    self.strength-= self.items.find(self.equip).attack
     self.equip = 0
-    self.reload
+    self.save
     items
   end
 
@@ -21,9 +21,11 @@ class Character < ActiveRecord::Base
     #equips an item then unequips the previous Item
     #updates stats of character as well
     #the new item is already in the backpack
-    self.unequip
+    if self.equip > 0
+      self.unequip
+    end
     self.equip = new_item.id
-    self.strength+= 100
+    self.strength+= new_item.attack
     self.save
 
   end
