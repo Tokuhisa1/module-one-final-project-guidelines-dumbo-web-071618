@@ -24,16 +24,14 @@ class Character < ActiveRecord::Base
   # end
 
   def unequip
-    un_item = []
     items.each do |item|
       if item.equip == true
-        un_item = Inventory.find_by(character_id: self.id, item_id:item.id)
-        un_item.character_id = nil
-        Inventory.find_by(character_id: self.id).strength -= item.attack
+        item.character_id = nil
+        self.strength -= item.attack
       end
-      un_item
     end
-
+    self.reload
+    items
   end
 
 
@@ -44,29 +42,37 @@ class Character < ActiveRecord::Base
     #updates stats of character as well
     #the new item is already in the backpack
     self.unequip
-    all_items.each do |item|
+    items.each do |item|
       if item.id == new_item.id
         self.strength += new_item.attack
-        equip_item = Inventory.find_by(item_id: new_item.id)
-        equip_item.equip = true
+        new_item.equip = true
       end
     end
-<<<<<<< HEAD
-# I think I haveto save the changes to the data base here update to inventory
-=======
->>>>>>> 5d17b456bce0c36ba4f8aa4cfeca88874037e5ee
+    self.reload
+    new_item
+
   end
 
   def use_item(item)
     heal_by = Item.find_by(item.id)
     puts " #{self.name} just used #{item.name}."
     self.health += item.healing
+    self.reload
     drop_item(heal_by)
+
   end
 
   def drop_item(delete_item)
-        delete_this = Inventory.find_by(character_id: self.id, item_id:delete_item.id)
-        delete_this.item_id = nil
+        # delete_this =  Inventory.find_by(character_id: self.id, item_id:delete_item.id)
+        # delete_this.character_id = nil
+        drop_all = delete_item.inventories.select do |inventory|
+          inventory.character == self
+        end
+        drop_all.each do |inventory|
+          inventory.destroy
+        end
+        self.reload
+
     puts  " #{self.name} dropped #{delete_item.name}."
   end
 
