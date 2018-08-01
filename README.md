@@ -22,7 +22,7 @@ We intend to build a character creation tool using ActiveRecord as the first ste
 - As a user, I want to be able to create a character so I can play an RPG.
 - As a user, I want to be able to view my character's information so I can strategize for playing an RPG.
 - As a user, I want to be able to edit my character's information [through its inventory] so I can implement my strategy for playing an RPG.
-- As a user, I want to be able to delete a charater I no longer wish to play with.
+- As a user, I want to be able to delete a character I no longer wish to play with.
 
 - As a user, I want to create an inventory for my character [during its creation] so I can keep track of my items.
 - As a user, I want to be able to view my inventory so  I can decide which item(s) to use.
