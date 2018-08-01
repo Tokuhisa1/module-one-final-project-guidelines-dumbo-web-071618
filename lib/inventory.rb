@@ -1,6 +1,6 @@
 class Inventory < ActiveRecord::Base
-  belongs_to :characters
-  belongs_to :items
+  belongs_to :character
+  belongs_to :item
 
   #I feel like for inventory we need an array of items in the Hash
   #Im thinking you can hold a weapon and a back pack because if we
