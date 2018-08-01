@@ -49,15 +49,15 @@ We intend to build a character creation tool using ActiveRecord as the first ste
 
 This schedule will be used to keep track of our progress throughout the week and align with our expectations.  
 
-| Day                                | Deliverable | Estimated Time | Invested | Actual  |
-|:-----------------------------------|:------------|---------------|---------|------ |
-| Day 1: **Monday** (07/30/2018)    | Project Ideation        | 2 hours | | 2.5 hours |
-|                                   | Project Approval        | 1 hour  | | 1.5 hours |
-|                             | Create Databse and Models        | 2 hours | | 2.5 hours |
-| Day 2: **Tuesday** (07/31/2018)    | Scope Revision                       | 1 hour  | | 2.5 hours |
-|                                   | MVP Functionality         | 2 hours | 1.75 hours | |
-| Day 3: **Wednesday** (08/01/2018)   |         |  | |  |
-| Post-MVP Tasks        |         |  |  | |
-| Day 4: **Thursday** (08/02/2018) | Demo Video           |  |  | |
-|                                  | Keynote Presentation            |  |  | |
-| Day 5: **Friday** (08/03/2018)  | Project Presentation                 |  |         | |
+|                 Day                |        Deliverable        | Estimated Time | Invested  |  Actual   |
+|:-----------------------------------|:--------------------------|----------------|-----------|-----------|
+|   Day 1: **Monday** (07/30/2018)   |      Project Ideation     |     2 hours    |           | 2.5 hours |
+|                                    |      Project Approval     |     1 hour     |           | 1.5 hours |
+|                                    | Create Databse and Models |     2 hours    |           | 2.5 hours |
+|   Day 2: **Tuesday** (07/31/2018)  |       Scope Revision      |     1 hour     |           | 2.5 hours |
+|                                    |     MVP Functionality     |     2 hours    |  7 hours  |           |
+| Day 3: **Wednesday** (08/01/2018)  | MVP Functionality (Cont.) |     2 hours    | 3.5 hours |           |
+|                                    |                           |                |           |           |
+|  Day 4: **Thursday** (08/02/2018)  |        Demo Video         |                |           |           |
+|           Post-MVP Tasks           |    Keynote Presentation   |                |           |           |
+|   Day 5: **Friday** (08/03/2018)   |    Project Presentation   |                |           |           |
