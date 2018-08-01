@@ -51,7 +51,10 @@ class Character < ActiveRecord::Base
         equip_item.equip = true
       end
     end
+<<<<<<< HEAD
 # I think I haveto save the changes to the data base here update to inventory
+=======
+>>>>>>> 5d17b456bce0c36ba4f8aa4cfeca88874037e5ee
   end
 
   def use_item(item)
