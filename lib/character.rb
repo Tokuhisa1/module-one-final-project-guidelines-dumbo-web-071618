@@ -6,6 +6,7 @@ class Character < ActiveRecord::Base
 
   def add_item(item)
     Inventory.create(character_id: self.id, item_id: item.id)
+    self.reload
   end
 
   # def backpack
@@ -24,32 +25,23 @@ class Character < ActiveRecord::Base
   # end
 
   def unequip
-    items.each do |item|
-      if item.equip == true
-        item.character_id = nil
-        self.strength -= item.attack
-      end
-    end
+
+    self.equip = 0
     self.reload
     items
   end
 
 
 
-  def equip(new_item)
+  def equips(new_item)
     #unequip.(item)
     #equips an item then unequips the previous Item
     #updates stats of character as well
     #the new item is already in the backpack
     self.unequip
-    items.each do |item|
-      if item.id == new_item.id
-        self.strength += new_item.attack
-        new_item.equip = true
-      end
-    end
-    self.reload
-    new_item
+    self.equip = new_item.id
+    self.strength+= 100
+    self.save
 
   end
 
