@@ -15,7 +15,7 @@
 We intend to build a character creation tool using ActiveRecord as the first step toward a command-line (CLI) role-playing game (RPG).
 
 ## Time-Priority Matrix <a id="matrix"></a>
-![Time-Priority Matrix](https://github.com/Tokuhisa1/west-kos-character-builder/blob/dev/CAM00188.jpg?raw=true)
+![Time-Priority Matrix](https://github.com/Tokuhisa1/west-kos-character-builder/blob/dev/time-priority-matrix.jpg?raw=true)
 
 ## User Stories
 ### MVP
