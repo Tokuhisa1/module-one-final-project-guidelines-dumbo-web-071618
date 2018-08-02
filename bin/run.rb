@@ -14,5 +14,7 @@ staff = Item.find(3)
 #stick = Item.create_weapon(name: "stick of oak",attack: 1)
 
 #kyle.add_item(stick)
-binding.pry
+
+
+#binding.pry
 puts "HELLO WORLD"
