@@ -1,2 +1,3 @@
 class Logic
+  
 end

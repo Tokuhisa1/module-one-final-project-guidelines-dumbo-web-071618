@@ -12,7 +12,8 @@ axe = Item.find(1)
 samurai_sword = Item.find(2)
 staff = Item.find(3)
 #stick = Item.create_weapon(name: "stick of oak",attack: 1)
-
+Game.start
+#binding.pry
 #kyle.add_item(stick)
 
 
