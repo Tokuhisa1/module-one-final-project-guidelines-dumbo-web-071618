@@ -46,7 +46,7 @@ We intend to build a character creation tool using ActiveRecord as the first ste
  - Active Record
  - [RMagick](https://rmagick.github.io/)
  - [CatPix](https://github.com/pazdera/catpix)
- - [TTY::Prompyt](https://github.com/piotrmurach/tty-prompt#ttyprompt-)
+ - [TTY::Prompt](https://github.com/piotrmurach/tty-prompt#ttyprompt-)
 
 ## Project Schedule <a id="schedule"></a>
 
